@@ -1,0 +1,57 @@
+## Debian Testing
+deb http://ftp.de.debian.org/debian/ testing main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ testing main contrib non-free
+
+## Actualizaciones de seguridad
+deb http://security.debian.org/ testing/updates main contrib non-free
+deb-src http://security.debian.org/ testing/updates main contrib non-free
+
+##Multimedia testing
+## aptitude install debian-multimedia-keyring
+deb http://www.deb-multimedia.org/ testing main non-free
+deb-src http://www.deb-multimedia.org/ testing main non-free
+
+
+
+# Virtualbox 
+# Para obtener su llave: 
+# wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add - 
+# or sudo apt-key add oracle_vbox.asc 
+deb http://download.virtualbox.org/virtualbox/debian wheezy contrib
+
+# Repositorio Reproductor VLC install vlc libdvdcss2 
+deb http://download.videolan.org/pub/videolan/debian sid main
+deb-src http://download.videolan.org/pub/videolan/debian sid main
+
+
+##########################
+# Google APT Repositories #
+##########################
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - 
+# or (gpg --keyserver subkeys.pgp.net --recv A040830F7FAC5991 && gpg --export --armor A040830F7FAC5991 | sudo apt-key add - ) 
+# Google Chrome repo http://www.google.com/linuxrepositories/
+deb http://dl.google.com/linux/chrome/deb/ stable main
+# Google Talk browser plugin http://www.google.com/chat/video
+# deb http://dl.google.com/linux/talkplugin/deb/ stable main
+# Google Earth
+# deb http://dl.google.com/linux/earth/deb/ stable main
+# Google's Music Manager
+# http://www.google.com/support/music/bin/answer.py?answer=1229970
+# deb http://dl.google.com/linux/musicmanager/deb/ stable main
+
+
+# A shell script to automate the retrieval and installation of the Oracle (Sun) Java Runtime Environment
+#  http://www.duinsoft.nl/packages.php?t=en
+# Secure APT: apt-key adv --keyserver keys.gnupg.net --recv-keys 5CB26B26
+# deb http://www.duinsoft.nl/pkg debs all
+
+##############
+### UBUNTU ###
+##############
+
+### LIBREOFFICE
+#
+
+### JAVA
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
+
